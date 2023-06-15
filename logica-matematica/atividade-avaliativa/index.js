@@ -1,4 +1,4 @@
-// Trabalho para o segundo ciclo avaliati
+// Trabalho para o segundo ciclo avaliativo
 
 let saldoInicial = parseFloat(prompt('Insira o seu saldo'));
 
