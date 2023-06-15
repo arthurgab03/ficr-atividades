@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="left-card">
+            <h1>Atividade 4 - Formulários</h1>
+            <img src="./img/metaverso-animate.svg" alt="imagem decorativa">
+        </div>
+
+        <form action="login.html" method="post">
+            <h2>Entrar</h2>
+            <label for="input-login">Login:</label>
+            <input type="text" id="input-login" required>
+
+            <label for="input-senha">Senha:</label>
+            <input type="password" id="input-senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$" title="A senha deve conter entre 8 e 12 caracteres com pelo menos 1 letra maiúscula, 1 número e não pode conter caracteres especiais." required>
+
+            <input class="enviar" type="submit" value="entrar">
+            <input class="apagar" type="reset" value="apagar">
+
+            <a href="#register">
+                <p>Não possui cadastro? Se registre!</p>
+            </a>
+
+        </form>
+    </main>
+
+    <section>
+        <div class="left-card">
+            <h2> Registre-se!</h2>
+            <img src="./img/memory-storage-animate (1).svg" alt="imagem decorativa">
+            <a href="https://github.com/arthurgab03" target="_blank" title="Vem dar uma olhada no meu GitHub!"><i class="fa fa-github"></i></a>
+        </div>
+
+        <form action="cadastro.html" method="get" id="register">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" title="Digite o seu nome completo" placeholder="Nome completo" required>
+
+
+            <label for="cadastro-login">Login:</label>
+            <input type="text" id="cadastro-login" title="Digite o seu login de usuário" placeholder="Login de usuário" required>
+
+
+            <label for="cadastro-senha">Senha:</label>
+            <input type="password" id="cadastro-senha" placeholder="Senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$" title="A senha deve conter entre 8 e 12 caracteres com pelo menos 1 letra maiúscula, 1 número e não pode conter caracteres especiais." required>
+
+            <div class="endereco">
+
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" required>
+
+
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" required>
+
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" required> 
+
+                <label for="estado">Estado:</label>
+                <select id="estado">
+                    <option> Acre </option>
+                    <option>Alagoas</option>
+                    <option>Amapá</option>
+                    <option>Amazonas</option>
+                    <option>Bahia</option>
+                    <option>Ceará</option>
+                    <option>Espírito Santo</option>
+                    <option>Goiás</option>
+                    <option>Maranhão</option>
+                    <option>Mato Grosso</option>
+                    <option>Mato Grosso do Sul</option>
+                    <option> Minas Gerais</option>
+                    <option> Pará</option>
+                    <option> Paraíba</option>
+                    <option> Paraná</option>
+                    <option>Pernambuco</option>
+                    <option>Piauí</option>
+                    <option> Rio de Janeiro</option>
+                    <option> Rio Grande do Norte</option>
+                    <option> Rio Grande do Sul</option>
+                    <option>Rondônia</option>
+                    <option> Roraima</option>
+                    <option>Santa Catarina</option>
+                    <option>São Paulo</option>
+                    <option>Sergipe</option>
+                    <option>Tocantins</option>
+                    <option>Distrito Federal</option>
+                </select>
+            </div>
+
+            <label for="cadastro-email">E-mail:</label>
+            <input type="text" id="cadastro-email" title="Digite o seu e-mail." placeholder="exemplo@gmail.com">
+
+            <div class="novidades">
+                <input type="checkbox" class="checkbox"> <label> Habilitar notificações
+                </label>
+            </div>
+
+            <div class="genero">
+                <input type="radio" name="sexo">
+                <label>Masculino</label>
+
+                <input type="radio" name="sexo">
+                <label>Feminino</label>
+            </div>
+
+            <div>
+                <input class="apagar" type="reset" value="apagar">
+                <input class="cadastro-enviar" type="submit" value="cadastrar">
+                
+            </div>
+
+
+
+        </form>
+
+    </section>
+
+
+
+</body>
+
+</html>

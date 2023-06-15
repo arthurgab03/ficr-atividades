@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #275EFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 98.7vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.left-card h1 {
+    margin-bottom: 3rem;
+}
+
+.left-card i {
+    font-size: 3rem;
+    position: absolute;
+    top: 78rem;
+    left: 10rem;
+    transition: 300ms;
+}
+
+.left-card i:hover {
+    color: orange;
+}
+
+main form {
+    margin-top: 5rem;
+    padding: 13rem 2rem;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2f2841;
+    border-radius: 10px;
+    width: 25%;
+    box-shadow: 7px 3px 14px -4px rgba(0, 0, 0, 0.57);
+}
+
+form h2 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+form p {
+    transition: 300ms;
+}
+
+form p:hover {
+    color: orange;
+}
+
+label {
+    color: #f0ffffde;
+    margin-right: 15rem;
+}
+
+input {
+    border: none;
+    border-radius: 6px;
+    background-color: #514869;
+    padding: 20px 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 25px;
+    color: #f0ffffde;
+}
+
+
+.enviar {
+    background-color: #275EFF;
+    width: 300px;
+    height: 25px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 200ms;
+}
+
+.apagar {
+    background-color: orange;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 200ms;
+    font-size: 12px;
+}
+
+.enviar:hover {
+    background-color:  #275dffab;
+    cursor: pointer;
+}
+
+
+section {
+    width: 98.7vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+section img {
+    width: 400px;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+#register {
+    padding: 20rem 2rem;
+    height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2f2841;
+    border-radius: 10px;
+    width: 25%;
+    box-shadow: 7px 3px 14px -4px rgba(0, 0, 0, 0.57);
+}
+
+#register input {
+    margin-bottom: 15px;
+}
+
+#register label {
+    width: 80px;
+}
+
+.endereco {
+    display: inline-block;
+    width: 335px;
+}
+
+.endereco input {
+    width: 100px;
+}
+
+.endereco label {
+    margin: 0;
+}
+
+.genero {
+    flex-direction: row;
+    display: flex;
+}
+
+.genero input {
+    width: 40px;
+}
+
+.genero label {
+    margin: 0;
+}
+
+.cadastro-apagar {
+    background-color: orange;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 200ms;
+    font-size: 12px;
+}
+
+.apagar:hover {
+    background-color: rgba(255, 166, 0, 0.767);
+    cursor: pointer;
+}
+
+.cadastro-enviar {
+    background-color: #275EFF;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 200ms;
+    font-size: 12px;
+}
+
+.cadastro-enviar:hover{
+    background-color: #275dffab;
+    cursor: pointer;
+}
+
+
+
+.novidades {
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.novidades input {
+    width: 50px;
+}
+
+.novidades label {
+    font-size: 14px;
+    margin: 0;
+}
+
+
