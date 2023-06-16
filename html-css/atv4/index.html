@@ -23,13 +23,13 @@
         <form action="login.html" method="get">
             <h2>Entrar</h2>
             <label for="input-login">Login:</label>
-            <input type="text" id="input-login" required>
+            <input type="text" id="input-login" name="input-login" required>
 
             <label for="input-senha">Senha:</label>
-            <input type="password" id="input-senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$" title="A senha deve conter entre 8 e 12 caracteres com pelo menos 1 letra maiúscula, 1 número e não pode conter caracteres especiais." required>
+            <input type="password" id="input-senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$" title="A senha deve conter entre 8 e 12 caracteres com pelo menos 1 letra maiúscula, 1 número e não pode conter caracteres especiais." name="input-senha" required>
 
-            <input class="enviar" type="submit" value="entrar">
-            <input class="apagar" type="reset" value="apagar">
+            <input class="enviar" type="submit" name="input-enviar" value="entrar">
+            <input class="apagar" type="reset" name="input-apagar" value="apagar">
 
             <a href="#register">
                 <p>Não possui cadastro? Se registre!</p>
@@ -47,31 +47,31 @@
 
         <form action="cadastro.html" method="get" id="register">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" title="Digite o seu nome completo" placeholder="Nome completo" required>
+            <input type="text" id="nome" name="input-nome" title="Digite o seu nome completo" placeholder="Nome completo" required>
 
 
             <label for="cadastro-login">Login:</label>
-            <input type="text" id="cadastro-login" title="Digite o seu login de usuário" placeholder="Login de usuário" required>
+            <input type="text" id="cadastro-login" name="cadastro-login" title="Digite o seu login de usuário" placeholder="Login de usuário" required>
 
 
             <label for="cadastro-senha">Senha:</label>
-            <input type="password" id="cadastro-senha" placeholder="Senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$" title="A senha deve conter entre 8 e 12 caracteres com pelo menos 1 letra maiúscula, 1 número e não pode conter caracteres especiais." required>
+            <input type="password" id="cadastro-senha" name="cadastro-senha" placeholder="Senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$" title="A senha deve conter entre 8 e 12 caracteres com pelo menos 1 letra maiúscula, 1 número e não pode conter caracteres especiais." required>
 
             <div class="endereco">
 
                 <label for="rua">Rua:</label>
-                <input type="text" id="rua" required>
+                <input type="text" id="rua" name="rua" required>
 
 
                 <label for="numero">Número:</label>
-                <input type="number" id="numero" required>
+                <input type="number" id="numero" name="numero" required>
 
 
                 <label for="bairro">Bairro:</label>
-                <input type="text" id="bairro" required>
+                <input type="text" id="bairro" name="bairro" required>
 
                 <label for="cidade">Cidade:</label>
-                <input type="text" id="cidade" required> 
+                <input type="text" id="cidade" name="cidade" required> 
 
                 <label for="estado">Estado:</label>
                 <select id="estado">
@@ -106,10 +106,10 @@
             </div>
 
             <label for="cadastro-email">E-mail:</label>
-            <input type="text" id="cadastro-email" title="Digite o seu e-mail." placeholder="exemplo@gmail.com">
+            <input type="text" id="cadastro-email" name="cadastro-email" title="Digite o seu e-mail." placeholder="exemplo@gmail.com">
 
             <div class="novidades">
-                <input type="checkbox" class="checkbox"> <label> Habilitar notificações
+                <input type="checkbox" class="checkbox" name="check"> <label> Habilitar notificações
                 </label>
             </div>
 
@@ -122,8 +122,8 @@
             </div>
 
             <div>
-                <input class="apagar" type="reset" value="apagar">
-                <input class="cadastro-enviar" type="submit" value="cadastrar">
+                <input class="apagar" type="reset" name="cadastro-apagar" value="apagar">
+                <input class="cadastro-enviar" type="submit" name="cadastro-enviar" value="cadastrar">
                 
             </div>
 
