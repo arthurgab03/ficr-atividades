@@ -1,4 +1,6 @@
 let enviar = document.getElementById('enviar');
+let audioSus = document.getElementById('suspeito');
+let audioAssassino = document.getElementById('assassino');
 
 
 function investiga() {
@@ -15,12 +17,14 @@ function investiga() {
     if(total == 5){
         resposta.innerHTML = nome + " é o assassino!";
         resposta.classList.add('assassino'); 
+        audioAssassino.play();
     } else if (total == 3 || total == 4){
         resposta.innerHTML = nome + " é cúmplice!";
         resposta.classList.remove('assassino');
     } else if (total == 2) {
         resposta.innerHTML = nome + " é suspeito!";
         resposta.classList.remove('assassino');
+        audioSus.play();
     } else if (total < 2 && total >= 0) {
         resposta.innerHTML = nome + " é inocente!";
         resposta.classList.remove('assassino'); 
