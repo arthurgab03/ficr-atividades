@@ -1,6 +1,6 @@
-let enviar = document.getElementById('enviar');
-let audioSus = document.getElementById('suspeito');
-let audioAssassino = document.getElementById('assassino');
+const enviar = document.getElementById('enviar');
+const audioSus = document.getElementById('suspeito');
+const audioAssassino = document.getElementById('assassino');
 
 
 function investiga() {
@@ -34,7 +34,26 @@ function investiga() {
 
 }
 
+enviar.addEventListener('click', investiga);
+
+// função para o modal 
+
+const abrirModal = document.getElementById('open-modal');
+const fecharModal = document.getElementById('close-modal');
+const modal = document.getElementById('modal');
+const fade = document.getElementById('fade');
+
+const toggleModal = () => {
+    modal.classList.toggle("hide");
+    fade.classList.toggle("hide");
+}
+
+[abrirModal, fecharModal, fade].forEach((e) => {
+    e.addEventListener('click', () => toggleModal()) 
+})
 
 
 
-enviar.addEventListener('click', investiga)
+
+
+

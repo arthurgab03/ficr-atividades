@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -18,15 +19,39 @@
     <audio src="./assets/audio/sus.mp3" id="suspeito"></audio>
     <audio src="./assets/audio/policia.mp3" id="assassino"></audio>
 
+
+
+
     <main>
 
+
         <div class="panel">
-            <button><i class="fa fa-info"></i>Instruções</button>
+
+            <button id="open-modal"><i class="fa fa-info"></i>Instruções</button>
+            <div id="fade" class="hide"></div>
+            <div id="modal" class="hide">
+                <div class="modal-header">
+                    <h2>Instruções</h2>
+                    <button id="close-modal"> <i class="fa fa-close"></i> Fechar</button>
+                </div>
+                <div class="modal-body">
+                    <p>Houve um assassinato! A polícia precisa descobrir quem matou a vítima. Para solucionar o crime, eles
+                        desenvolveram um programa que define quem é inocente,  quem é suspeito, quem é cúmplice, e quem é
+                        o assassino.</p>
+                    <h3>Regras:</h3>
+                    <ol>
+                        <li> Insira seu nome.</li>
+                        <li> Você vai utilizar números para responder as perguntas.</li>
+                        <li> Digite 1 para "sim" e 0 para "não".</li>
+                        <li> A resposta do seu teste vai aparecer logo abaixo do botão de enviar.</li>
+                    </ol>
+                </div>
+            </div>
 
             <label for="nome">Insira seu nome:</label>
             <input type="text" id="nome" name="nome">
 
-           
+
 
             <label for="fone">Telefonou para a vítima?</label>
             <input type="number" id="fone" name="fone">
@@ -43,7 +68,7 @@
             <label for="trabalho">Já trabalhou com a vítima?</label>
             <input type="number" id="trabalho" name="trabalho">
 
-           
+
             <input type="submit" id="enviar" value="checar">
 
             <div class="container">
@@ -57,7 +82,9 @@
 
     </main>
 
-    <script src="./script.js"></script>
+
+
+
 </body>
 
 </html>
