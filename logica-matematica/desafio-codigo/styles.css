@@ -219,7 +219,12 @@ button {
 
    #modal {
     transform: translate(-50%, -60%);
+    display: none;
     
+   }
+
+   #fade {
+    display: none;
    }
 
    #modal ol {
